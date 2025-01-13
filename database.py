@@ -13,4 +13,4 @@ engine = create_engine(uri)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-BaseModel = declarative_base()
+Base = declarative_base()
