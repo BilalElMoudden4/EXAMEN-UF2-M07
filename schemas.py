@@ -15,3 +15,10 @@ class ItemBase(BaseModel):
     contraseña: str
     
 #----------------------------------------------------
+
+#Ejercicio 2
+class ItemCreate(ItemBase):
+    pass  
+
+class Item(ItemBase):
+    id: int 
