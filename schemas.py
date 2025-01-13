@@ -6,13 +6,13 @@ from pydantic import BaseModel
 class ItemBase(BaseModel):
     nombre: str
     apellido: str
-    email: str
+    email: str #Campo Sensible (ejercicio3)
     descripcion: Optional[str]
     curso: int  
     año: int
-    direccion: str
+    direccion: str #Campo Sensible (ejercicio3)
     cp: Optional[str]
-    contraseña: str
+    contraseña: str #Campo Sensible (ejercicio3)
     
 #----------------------------------------------------
 

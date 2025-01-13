@@ -19,3 +19,8 @@ def get_db():
 def add_user(item: schemas.ItemCreate, db: Session = Depends(get_db)):
     return functs.add_user(db, item)
 #----------------------------------------------------------
+
+#Ejercicio 4
+@app.get("/recibirUsuario/", response_model=list[schemas.Item])
+def recibir_usuario(limit: int = 10, db: Session = Depends(get_db)):
+    return functs.recibirUsuario(db, limit=limit)

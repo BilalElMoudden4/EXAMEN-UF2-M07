@@ -9,3 +9,8 @@ def add_user(db: Session, item: ItemBase):
     db.commit()
     db.refresh(db_item) 
     return db_item
+
+
+#Ejercicio 4
+def recibirUsuario(db: Session, limit: int = 10):
+    return db.query(Item).limit(limit).all()
